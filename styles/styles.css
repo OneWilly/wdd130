@@ -6,7 +6,7 @@
 
 body {
     font-size: 16px;
-    font-family: roboto;
+    font-family: roboto, arial, sans-serif;
 
 }
 
@@ -58,7 +58,7 @@ aside img {
 
 aside h2 {
     position: absolute;
-    top: 47px;
+    top: 67px;
     left: 150px;
 }
 
