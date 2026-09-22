@@ -57,9 +57,7 @@ aside img {
 }
 
 aside h2 {
-    position: absolute;
-    top: 67px;
-    left: 150px;
+    text-align: center;
 }
 
 p {
