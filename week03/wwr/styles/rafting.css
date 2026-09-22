@@ -7,13 +7,8 @@
     /* dark slate blue */
     --accent2-color: #e9c46a;
     /* light golden yellow */
-    --heading-font: "Times New Roman", "Georgia", serif;
+    --heading-font: "Times New Roman", Georgia, serif;
     --body-font: Arial, Helvetica, sans-serif;
-}
-
-header {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
 }
 
 * {
@@ -34,6 +29,32 @@ footer {
     margin: 0 auto;
 }
 
+/* Header: logo left, nav right */
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
+header img {
+    width: 90px;
+    height: auto;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+header nav a {
+    color: var(--accent2-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
 h1,
 h2 {
     font-family: var(--heading-font);
@@ -48,8 +69,10 @@ article {
     padding: 8px;
 }
 
-.socialmedia a {
-    text-decoration: none;
+/* ------- Hero with overlays ------- */
+.hero {
+    position: relative;
+    /* anchor for the absolute h1 and article */
 }
 
 .hero img {
@@ -58,7 +81,7 @@ article {
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -67,10 +90,44 @@ h1 {
     opacity: 0.7;
     background-color: var(--accent1-color);
     color: #fff;
-    /* white text – make sure there is enough contrast with the background-color */
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 6px;
 }
 
 .hero article img {
     float: right;
     width: 125px;
+    margin-left: 12px;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* ------- Footer ------- */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
+.socialmedia {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 32px;
+    height: 32px;
 }
