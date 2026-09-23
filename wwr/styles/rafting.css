@@ -129,3 +129,41 @@ footer {
     width: 32px;
     height: 32px;
 }
+
+.adventures {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    text-align: center;
+}
+
+.adventures h2 {
+    grid-column: 1 / -1;
+    margin-bottom: 1rem;
+}
+
+.adventures figure {
+    margin: 0;
+}
+
+.adventures img {
+    width: 100%;
+    height: auto;
+}
+
+.adventures figcaption {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.history-grid {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 1rem;
+}
+
+.history-grid img {
+    width: 200px;
+    height: auto;
+}
