@@ -5,12 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="William Oneka">
-    <title>Dry Oar Rafting | Contact Us</title>
+    <title>White Water Rafting Co. | Contact Us</title>
     <meta name="description"
-      content="Contact Dry Oar Rafting for reservations, general inquiries, or website suggestions. Find our address, phone, email, and location map.">
-
+      content="Contact White Water Rafting Co. for reservations, general inquiries, or website suggestions. Find our address, phone, email, and location map.">
     <link rel="stylesheet" href="styles/rafting.css">
-
 </head>
 
 <body>
@@ -25,8 +23,9 @@
             <a href="contact.html">Contact Us</a>
         </nav>
     </header>
+
     <main>
-        <h1>Contact Us</h1>
+        <h1>Contact White Water Rafting Co.</h1>
 
         <!-- Company Info + Map -->
         <section class="contact-info">
@@ -78,12 +77,24 @@
 
                 <fieldset class="form-item">
                     <legend>Purpose of Message:</legend>
-                    <label><input type="radio" name="purpose" value="general" required> General
-                        Inquiry</label>
-                    <label><input type="radio" name="purpose" value="reservation"> Reservation
-                        Question</label>
-                    <label><input type="radio" name="purpose" value="suggestion"> Website
-                        Suggestion</label>
+
+                    <label for="purpose-general">
+                        <input type="radio" id="purpose-general" name="purpose" value="general"
+                          required>
+                        General Inquiry
+                    </label>
+
+                    <label for="purpose-reservation">
+                        <input type="radio" id="purpose-reservation" name="purpose"
+                          value="reservation">
+                        Reservation Question
+                    </label>
+
+                    <label for="purpose-suggestion">
+                        <input type="radio" id="purpose-suggestion" name="purpose"
+                          value="suggestion">
+                        Website Suggestion
+                    </label>
                 </fieldset>
 
                 <div class="form-item">
@@ -92,7 +103,7 @@
                 </div>
 
                 <div class="form-item checkbox-item">
-                    <label>
+                    <label for="newsletter">
                         <input type="checkbox" id="newsletter" name="newsletter">
                         Please subscribe me to the monthly newsletter
                     </label>
@@ -102,6 +113,7 @@
             </form>
         </section>
     </main>
+
     <footer>
         <p> &copy; 2026 White Water Rafting Co. | William Oneka</p>
         <nav class="socialmedia">

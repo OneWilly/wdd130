@@ -1,6 +1,6 @@
 :root {
     --primary-color: #055a05;
-    /* warm sand */
+    /* deep green */
     --accent1-color: #264653;
     /* dark slate blue */
     --accent2-color: #e9c46a;
@@ -27,7 +27,7 @@ footer {
     margin: 0 auto;
 }
 
-/* Header: logo left, nav right */
+/* ------- Header ------- */
 header {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -53,6 +53,7 @@ header nav a {
     font-weight: bold;
 }
 
+/* ------- Headings ------- */
 h1,
 h2 {
     font-family: var(--heading-font);
@@ -67,7 +68,7 @@ article {
     padding: 8px;
 }
 
-/* ------- Hero with overlays ------- */
+/* ------- Hero with overlays (about page) ------- */
 .hero {
     position: relative;
     /* anchor for the absolute h1 and article */
@@ -130,6 +131,7 @@ footer {
     height: 32px;
 }
 
+/* ------- Adventures section (about page) ------- */
 .adventures {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -156,6 +158,7 @@ footer {
     margin-top: 0.5rem;
 }
 
+/* ------- History section (about page) ------- */
 .history-grid {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
@@ -168,7 +171,11 @@ footer {
     height: auto;
 }
 
-/* Contact page layout */
+/* ===================================================
+   Contact page styles
+   =================================================== */
+
+/* Company info + embedded map */
 .contact-info {
     display: grid;
     gap: 1rem;
@@ -176,7 +183,9 @@ footer {
 }
 
 .contact-info iframe {
-    max-width: 100%;
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
     border: 1px solid #ccc;
     border-radius: 0.5rem;
 }
@@ -258,24 +267,4 @@ footer {
 
 .contact-form button:hover {
     background-color: #145a32;
-}
-
-.contact-form button {
-    background-color: #1a5276;
-    /* dark blue */
-    color: #fff;
-    /* white */
-}
-
-.contact-info iframe {
-    width: 100%;
-    max-width: 600px;
-    height: 450px;
-    border: 1px solid #ccc;
-    border-radius: 0.5rem;
-}
-
-.form-item {
-    display: grid;
-    gap: 0.25rem;
 }
