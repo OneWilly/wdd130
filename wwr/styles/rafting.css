@@ -342,3 +342,95 @@ th {
     background-color: var(--primary-color);
     color: var(--accent2-color);
 }
+
+/* ------- Newsletter ------- */
+.newsletter {
+    background-color: #eee;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem 16px;
+}
+
+.newsletter form {
+    display: grid;
+    gap: 1rem;
+}
+
+.newsletter label {
+    font-weight: bold;
+}
+
+.newsletter input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.newsletter button {
+    padding: 0.6rem 1.5rem;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    justify-self: start;
+}
+
+.newsletter button:hover {
+    background-color: var(--accent1-color);
+}
+
+/* ------- Home grid (2 columns) ------- */
+.home-grid-section {
+    padding: 1rem;
+    text-align: center;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    text-align: left;
+}
+
+.home-grid article {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 0;
+    margin: 0;
+}
+
+.home-grid img {
+    width: 100%;
+    height: auto;
+}
+
+.home-grid h3,
+.home-grid p {
+    padding: 0 1rem;
+}
+
+.home-grid p {
+    padding-bottom: 1rem;
+}
+
+/* ------- Call to action ------- */
+.cta {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    padding: 2.5rem 1.5rem;
+    border-radius: 8px;
+    margin: 2rem 16px;
+}
+
+.cta h2 {
+    color: var(--accent2-color);
+}
+
+.cta-button {
+    margin-top: 1rem;
+}
